@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Name It\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-25 14:18+0000\n"
-"PO-Revision-Date: 2023-01-25 15:25+0200\n"
+"POT-Creation-Date: 2023-01-25 14:33+0000\n"
+"PO-Revision-Date: 2023-01-25 15:48+0200\n"
 "Last-Translator: 5axes <5axes@free.fr>\n"
 "Language-Team: 5axes\n"
 "Language: fr\n"
@@ -125,7 +125,7 @@ msgstr "Test pour les Murs fins"
 #: CalibrationShapes.py:202
 msgctxt "@item:inmenu"
 msgid "Add an Overhang Test"
-msgstr "Test pour les Dépouilles"
+msgstr "Test du Porte-à-Faux"
 
 #: CalibrationShapes.py:203
 msgctxt "@item:inmenu"
@@ -185,7 +185,7 @@ msgstr "Copier les Scripts"
 #: CalibrationShapes.py:221
 msgctxt "@item:inmenu"
 msgid "Define default size"
-msgstr "Définir la taille paa défaut"
+msgstr "Définir la taille par défaut"
 
 #: CalibrationShapes.py:223
 msgctxt "@item:inmenu"
