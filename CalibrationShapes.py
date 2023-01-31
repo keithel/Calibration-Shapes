@@ -808,15 +808,15 @@ class CalibrationShapes(QObject, Extension):
         extruder_stack = application.getExtruderManager().getActiveExtruderStacks() 
         
         extruder_nr=len(extruder_stack)
-        Logger.log("d", "extruder_nr= %d", extruder_nr)
+        # Logger.log("d", "extruder_nr= %d", extruder_nr)
         # default_extruder_position  : <class 'str'>
         if ext_pos>0 and ext_pos<=extruder_nr :
             default_extruder_position = int(ext_pos-1)
         else :
             default_extruder_position = int(application.getMachineManager().defaultExtruderPosition)
-        Logger.log("d", "default_extruder_position= %s", type(default_extruder_position))
+        # Logger.log("d", "default_extruder_position= %s", type(default_extruder_position))
         default_extruder_id = extruder_stack[default_extruder_position].getId()
-        Logger.log("d", "default_extruder_id= %s", default_extruder_id)
+        # Logger.log("d", "default_extruder_id= %s", default_extruder_id)
         node.callDecoration("setActiveExtruder", default_extruder_id)
  
         stack = node.callDecoration("getStack") # created by SettingOverrideDecorator that is automatically added to CuraSceneNode
