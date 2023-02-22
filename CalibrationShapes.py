@@ -57,6 +57,7 @@
 # V2.1.4   : Change for compatibility on Message Text
 # V2.1.5   : RetractTower Script to 1.9
 # V2.1.6   : RetractTower Script to 1.10 https://github.com/5axes/Calibration-Shapes/issues/120
+#
 # V2.2.0   : French Translation
 # V2.2.1   : German Translation thanks x40-Community (https://github.com/x40-Community)
 #-------------------------------------------------------------------------------------------
