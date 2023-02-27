@@ -3,19 +3,16 @@
 //---------------------------
 // Nozzle 0.4
 //---------------------------
-// ContinusSpeed Script
+// MaxFlow Script
 //---------------------------
-// StartTempTower       : 220 
-// Incremental Temp     : -5
+// Layer = 0.2
+// Start Value          : 100 %
+// End Value            : 200 %
+// Offset Layer         : 0
 //---------------------------
-// Layer = 0.16 (First layer 0.2)
-// Layer Change         : 52
-// Offset Layer         : 5
-//---------------------------
-// Based on a design proposed by stoempie https://www.thingiverse.com/thing:2493504
 // Freely adapted by 5@xes  2020
 //-------------------------------------------------------------------------------------------
-// Modification 01/2022 increase the wall thickness to 4 Line_Width
+// Modification : None
 //-------------------------------------------------------------------------------------------
 
 $fn=50;
