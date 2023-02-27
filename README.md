@@ -27,6 +27,7 @@ You can also load standard test  / calibration  part :
 | [Thin Wall Test](https://github.com/5axes/Calibration-Shapes/wiki/Thin-Wall-Test)                               | [Thin Wall Test](./models/ThinWall.stl)                         |
 | [Overhang Test](https://github.com/5axes/Calibration-Shapes/wiki/Overhang-Test)                                 | [Overhang Test](./models/Overhang.stl)                          |
 | [Flow Test](https://github.com/5axes/Calibration-Shapes/wiki/Flow-Test)                                         | [Flow Test](./models/FlowTest.stl)                              |
+| [MaxFlow Test](https://github.com/5axes/Calibration-Shapes/wiki/MaxFlow-Test)                                         | [MaxFlow Test](./models/MaxFlow.stl)                              |
 | [Tower Flow Test](https://github.com/5axes/Calibration-Shapes/wiki/FlowTower-Test)                              | [TowerFlow Test](./models/Flow-tower-04x02.stl)                 |
 | [Hole Test](https://github.com/5axes/Calibration-Shapes/wiki/Hole-Test)                                         | [Hole Test](./models/HoleTest.stl)                              |
 | [Linear/Pressure Advance Tower](https://github.com/5axes/Calibration-Shapes/wiki/Linear-Pressure-Advance-Tower) | [Linear/Pressure Adv Tower](./models/PressureAdvTower.stl)      |
@@ -72,10 +73,11 @@ This plugin is using the [Trimesh](https://github.com/mikedh/trimesh) library to
 
 Several postprocessing Scripts are included into the plugin to help the user to generate automaticaly the differents Towers.
 
-- [RetractTower.py](./resources/scripts/RetractTower.py)
-- [SpeedTower.py](./resources/scripts/SpeedTower.py)
-- [TempFanTower.py](./resources/scripts/TempFanTower.py)
-- [FlowTower.py](./resources/scripts/FlowTower.py)
+- [RetractTower.py](./scripts/RetractTower.py)
+- [SpeedTower.py](./scripts/SpeedTower.py)
+- [TempFanTower.py](./scripts/TempFanTower.py)
+- [FlowTower.py](./scripts/FlowTower.py)
+- [MaxFlow.py](./scripts/MaxFlow.py)
 
 ### Copy Scripts
 
@@ -92,7 +94,7 @@ The scripts provided with this plugin must be visible in the Postprocessing scri
 ![Adding script](./images/plugins.jpg)
 
 
-#### [SpeedTower.py](resources/scripts/SpeedTower.py)
+#### [SpeedTower.py](scripts/SpeedTower.py)
 
 
 Description :  postprocessing-script to easily define a Speed Tower.
@@ -112,7 +114,7 @@ Five options :
 ![SpeedTower.py](./images/speedtower.jpg)
 
 
-#### [TempFanTower.py](resources/scripts/TempFanTower.py)
+#### [TempFanTower.py](scripts/TempFanTower.py)
 
 
 Description:  postprocessing-script to easily create a temptower and not use 10 changeAtZ-scripts
@@ -124,7 +126,7 @@ Description:  postprocessing-script to easily create a temptower and not use 10 
 ![TempFanTower.py](./images/tempfan.jpg)
 
 
-#### [RetractTower.py](resources/scripts/RetractTower.py)
+#### [RetractTower.py](scripts/RetractTower.py)
 
 
 
@@ -141,7 +143,7 @@ Two options :
 ![RetractTower.py](./images/retract-tower.jpg)
 
 
-#### [FlowTower.py](resources/scripts/FlowTower.py)
+#### [FlowTower.py](scripts/FlowTower.py)
 
 
 Description:  postprocessing-script to easily create a FlowTower
@@ -151,6 +153,18 @@ Description:  postprocessing-script to easily create a FlowTower
     - Using Flow Varation   :  [Flow Varation](https://marlinfw.org/docs/gcode/M221.html) (M221 S) 
 
 ![FlowTower.py](./images/flowtower.jpg)
+
+
+#### [MaxFlow.py](scripts/MaxFlow.py)
+
+
+Description:  postprocessing-script to easily create a test the Maximum speed of the Printer
+
+ The default values are for this FlowTower model : [MaxFlow Test Nozzle 0.4 / Layer height 0.2](./models/MaxFlow.stl)
+- FlowTower from 100% to 200% 
+    - Using Speed Varation   :  [Speed Varation](https://marlinfw.org/docs/gcode/M220.html) (M220 S) 
+
+![MaxFlow.py](./images/maxflowscript.jpg)
 
 ## Add Mark
 
