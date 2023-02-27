@@ -46,12 +46,22 @@ class MaxFlow(Script):
                     "default_value": 200
                     
                 },
+                "changelayer":
+                {
+                    "label": "Change Layer",
+                    "description": "How many layers needs to be printed before the value should be changed.",
+                    "type": "int",
+                    "default_value": 10,
+                    "minimum_value": 1,
+                    "maximum_value": 1000,
+                    "maximum_value_warning": 100
+                },                
                 "changelayeroffset":
                 {
                     "label": "Change Layer Offset",
                     "description": "If the print has a base, indicate the number of layers from which to start the changes.",
                     "type": "int",
-                    "default_value": 4,
+                    "default_value": 0,
                     "minimum_value": 0,
                     "maximum_value": 1000,
                     "maximum_value_warning": 100
@@ -71,6 +81,7 @@ class MaxFlow(Script):
         UseLcd = self.getSettingValueByKey("lcdfeedback")
         StartValue = float(self.getSettingValueByKey("startValue"))
         EndValue = float(self.getSettingValueByKey("endValue"))
+        ChangeLayer = int(self.getSettingValueByKey("changelayer"))
         ChangeLayerOffset = int(self.getSettingValueByKey("changelayeroffset"))
         ChangeLayerOffset += 2  # Modification to take into account the numbering offset in Gcode
                                 # layer_index = 0 for initial Block 1= Start Gcode normaly first layer = 0 
@@ -104,7 +115,7 @@ class MaxFlow(Script):
                         lines.insert(line_index + 2, Command)
                         if UseLcd == True :               
                             lines.insert(line_index + 3, lcd_gcode)
-                    elif (layer_index-ChangeLayerOffset)>0:
+                    elif ((layer_index-ChangeLayerOffset) % ChangeLayer == 0) and ((layer_index-ChangeLayerOffset)>0):
                             CurrentValue += ValueChange
                             Command = "M220 S{:d}".format(int(CurrentValue))
                             lcd_gcode = "M117 Speed S{:d}".format(int(CurrentValue))
