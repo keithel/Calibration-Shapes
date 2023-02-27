@@ -88,7 +88,8 @@ class MaxFlow(Script):
                 if line.startswith(";LAYER_COUNT:"):
                     max_layer = int(line.split(":")[1])   # Recuperation Nb Layer Maxi
                     ValueChange = int((EndValue-StartValue)/(max_layer-ChangeLayerOffset))
-                    # Logger.log('d', 'Max_layer : {}'.format(max_layer))
+                    Logger.log('d', 'Max_layer : {}'.format(max_layer))
+                    Logger.log('d', 'ValueChange : {}'.format(ValueChange))
                     
                 if line.startswith(";LAYER:"):
                     line_index = lines.index(line)
@@ -103,8 +104,7 @@ class MaxFlow(Script):
                         lines.insert(line_index + 2, Command)
                         if UseLcd == True :               
                             lines.insert(line_index + 3, lcd_gcode)
-
-                    if (layer_index-ChangeLayerOffset)>0:
+                    elif (layer_index-ChangeLayerOffset)>0:
                             CurrentValue += ValueChange
                             Command = "M220 S{:d}".format(int(CurrentValue))
                             lcd_gcode = "M117 Speed S{:d}".format(int(CurrentValue))
