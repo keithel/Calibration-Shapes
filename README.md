@@ -164,7 +164,7 @@ Description:  postprocessing-script to easily create a test the Maximum speed of
 - FlowTower from 100% to 200% 
     - Using Speed Varation   :  [Speed Varation](https://marlinfw.org/docs/gcode/M220.html) (M220 S) 
 
-![MaxFlow.py](./images/MaxFlow.jpg)
+![MaxFlow.py](./images/maxflowscript.jpg)
 
 ## Add Mark
 
