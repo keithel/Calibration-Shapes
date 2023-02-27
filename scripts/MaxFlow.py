@@ -38,13 +38,12 @@ class MaxFlow(Script):
                     "type": "int",
                     "default_value": 100
                 },
-                "endValue":
+                "valueChange":
                 {
-                    "label": "End Value",
-                    "description": "The end value of the Test.",
+                    "label": "Value Increment",
+                    "description": "The value change of each block, can be positive or negative. I you want 50 and then 40, you need to set this to -10.",
                     "type": "int",
-                    "default_value": 200
-                    
+                    "default_value": 10
                 },
                 "changelayer":
                 {
@@ -79,8 +78,8 @@ class MaxFlow(Script):
     def execute(self, data):
 
         UseLcd = self.getSettingValueByKey("lcdfeedback")
-        StartValue = float(self.getSettingValueByKey("startValue"))
-        EndValue = float(self.getSettingValueByKey("endValue"))
+        StartValue = int(self.getSettingValueByKey("startValue"))
+        ValueChange = int(self.getSettingValueByKey("valueChange"))
         ChangeLayer = int(self.getSettingValueByKey("changelayer"))
         ChangeLayerOffset = int(self.getSettingValueByKey("changelayeroffset"))
         ChangeLayerOffset += 2  # Modification to take into account the numbering offset in Gcode
@@ -89,7 +88,6 @@ class MaxFlow(Script):
         CurrentValue = StartValue
         Command=""
         max_layer=9999
-        ValueChange = 0
         
         for layer in data:
             layer_index = data.index(layer)
@@ -98,7 +96,7 @@ class MaxFlow(Script):
             for line in lines:                  
                 if line.startswith(";LAYER_COUNT:"):
                     max_layer = int(line.split(":")[1])   # Recuperation Nb Layer Maxi
-                    ValueChange = int((EndValue-StartValue)/(max_layer-ChangeLayerOffset))
+                    # ValueChange = int((EndValue-StartValue)/(max_layer-ChangeLayerOffset))
                     Logger.log('d', 'Max_layer : {}'.format(max_layer))
                     Logger.log('d', 'ValueChange : {}'.format(ValueChange))
                     
