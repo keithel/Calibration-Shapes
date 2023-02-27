@@ -60,6 +60,7 @@
 #
 # V2.2.0   : French Translation
 # V2.2.1   : German Translation thanks x40-Community (https://github.com/x40-Community)
+# V2.2.2   : Add Max Flow Test
 #-------------------------------------------------------------------------------------------
 
 VERSION_QT5 = False
@@ -204,6 +205,7 @@ class CalibrationShapes(QObject, Extension):
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add an Overhang Test"), self.addOverhangTest)
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a FlowTower Test"), self.addFlowTowerTest)
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Flow Test"), self.addFlowTest)
+        self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Max Flow Test"), self.addMaxFlowTest)
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Multi-Flow Test"), self.addMultiFlowTest)
         
         
@@ -397,7 +399,9 @@ class CalibrationShapes(QObject, Extension):
         mesh =  trimesh.load(model_definition_path)
         
         fl=kwargs.get('flow', 0)
-            
+        
+        fm=kwargs.get('mode', '')
+        
         # addShape
         if fl>0 :
             fact=kwargs.get('factor', 1)
@@ -411,7 +415,8 @@ class CalibrationShapes(QObject, Extension):
             mesh.apply_transform(trimesh.transformations.scale_matrix(fact, origin, DirZ))
             mesh.apply_transform(trimesh.transformations.translation_matrix([0, (100-fl)*12*fact, 0]))
             self._addShapeFlow(mesh_name,self._toMeshData(mesh), **kwargs)
-            
+        elif len(fm)>0:
+            self._addShape(mesh_name,self._toMeshData(mesh), **kwargs)
         else :
             self._addShape(mesh_name,self._toMeshData(mesh), **kwargs)
  
@@ -511,6 +516,10 @@ class CalibrationShapes(QObject, Extension):
     def addFlowTest(self) -> None:
         self._registerShapeStl("FlowTest", "FlowTest.stl")
 
+    def addMaxFlowTest(self) -> None:
+        self._registerShapeStl("MaxFlowTest", "MaxFlow.stl" , mode = "surface")
+        self._checkAdaptativ(False)
+        
     def addMultiFlowTest(self) -> None:
     
         global_container_stack = CuraApplication.getInstance().getGlobalContainerStack() 
@@ -788,7 +797,7 @@ class CalibrationShapes(QObject, Extension):
         
     # Initial Source code from  fieldOfView
     # https://github.com/fieldOfView/Cura-SimpleShapes/blob/bac9133a2ddfbf1ca6a3c27aca1cfdd26e847221/SimpleShapes.py#L70
-    def _addShape(self, mesh_name, mesh_data: MeshData, ext_pos = 0 , hole = False , thin = False ) -> None:
+    def _addShape(self, mesh_name, mesh_data: MeshData, ext_pos = 0 , hole = False , thin = False , mode = "" ) -> None:
         application = CuraApplication.getInstance()
         global_stack = application.getGlobalContainerStack()
         if not global_stack:
@@ -838,6 +847,13 @@ class CalibrationShapes(QObject, Extension):
             new_instance.resetState()  # Ensure that the state is not seen as a user state.
             settings.addInstance(new_instance)
  
+        if len(mode) :
+            definition = stack.getSettingDefinition("magic_mesh_surface_mode")
+            new_instance = SettingInstance(definition, settings)
+            new_instance.setProperty("value", mode)
+            new_instance.resetState()  # Ensure that the state is not seen as a user state.
+            settings.addInstance(new_instance)
+            
             
         active_build_plate = application.getMultiBuildPlateModel().activeBuildPlate
         node.addDecorator(BuildPlateDecorator(active_build_plate))
