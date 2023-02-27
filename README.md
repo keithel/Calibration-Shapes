@@ -154,6 +154,18 @@ Description:  postprocessing-script to easily create a FlowTower
 
 ![FlowTower.py](./images/flowtower.jpg)
 
+
+#### [MaxFlow.py](scripts/MaxFlow.py)
+
+
+Description:  postprocessing-script to easily create a test the Maximum speed of the Printer
+
+ The default values are for this FlowTower model : [MaxFlow Test Nozzle 0.4 / Layer height 0.2](./models/MaxFlow.stl)
+- FlowTower from 100% to 200% 
+    - Using Speed Varation   :  [Speed Varation](https://marlinfw.org/docs/gcode/M220.html) (M220 S) 
+
+![MaxFlow.py](./images/MaxFlow.jpg)
+
 ## Add Mark
 
 This function has been removed from the last versions and is now the subject of a specific plugin with many more possibilities. You can find the plugin at the following address: [Name It!](https://github.com/5axes/NameIt))
