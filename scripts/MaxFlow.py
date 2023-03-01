@@ -34,15 +34,17 @@ class MaxFlow(Script):
                 "startValue":
                 {
                     "label": "Start value",
-                    "description": "The start value of the Test.",
+                    "description": "The percentage start value of the Test.",
                     "type": "int",
+                    "unit": "%",
                     "default_value": 100
                 },
                 "valueChange":
                 {
                     "label": "Value Increment",
-                    "description": "The value change of each block, can be positive or negative. I you want 50 and then 40, you need to set this to -10.",
+                    "description": "The percentage value change of each block, can be positive or negative. I you want 50 and then 40, you need to set this to -10.",
                     "type": "int",
+                    "unit": "%",
                     "default_value": 10
                 },
                 "changelayer":
