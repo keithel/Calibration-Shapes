@@ -30,7 +30,7 @@ Base();
 
 
 module Base() {
-  translate([-75, -40, 0]) difference() {  
+  translate([-70, -40.05, 0]) difference() {  
     minkowski() {
         union() {
             translate([0, 0, 0]) cube([10,80,Height+Hc], center = false);
