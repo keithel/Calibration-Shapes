@@ -33,10 +33,10 @@ module Base() {
   translate([-75, -40, 0]) difference() {  
     minkowski() {
         union() {
-            translate([0, 0, 0]) cube([10,80,Height], center = false);
-            translate([0, 0, 0]) cube([140,0.1,Height], center = false);
-            translate([0, 40, 0]) cube([140,0.1,Height], center = false);
-            translate([0, 80, 0]) cube([140,0.1,Height], center = false);
+            translate([0, 0, 0]) cube([10,80,Height+Hc], center = false);
+            translate([0, 0, 0]) cube([140,0.1,Height+Hc], center = false);
+            translate([0, 40, 0]) cube([140,0.1,Height+Hc], center = false);
+            translate([0, 80, 0]) cube([140,0.1,Height+Hc], center = false);
         }
       cylinder(r=10,h=1, center = false);
     }
@@ -44,7 +44,7 @@ module Base() {
     translate([20, 60, 0]) cylinder(h = Height*2, r1 = 10.05, r2 = 10.05, center = false);
     
     for (a =[0:2:30])
-        translate([-10, -10, a]) rotate([-90,0,0]) cylinder(h = 150, r1 = 0.2, r2 = 0.2, center = false);
+        translate([-10, -10, a+Hc]) rotate([-90,0,0]) cylinder(h = 150, r1 = 0.2, r2 = 0.2, center = false);
   }
 }
 
