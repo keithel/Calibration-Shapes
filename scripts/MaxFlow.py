@@ -37,7 +37,7 @@ class MaxFlow(Script):
                     "description": "The percentage start value of the Test.",
                     "type": "int",
                     "unit": "%",
-                    "default_value": 100
+                    "default_value": 60
                 },
                 "valueChange":
                 {
@@ -52,7 +52,7 @@ class MaxFlow(Script):
                     "label": "Change Layer",
                     "description": "How many layers needs to be printed before the value should be changed.",
                     "type": "int",
-                    "default_value": 10,
+                    "default_value": 8,
                     "minimum_value": 1,
                     "maximum_value": 1000,
                     "maximum_value_warning": 100
