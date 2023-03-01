@@ -1,16 +1,16 @@
 //-------------------------------------------------------------------------------------------
 // Max Flow Test
-// Original Design : https://www.printables.com/fr/model/342075-extrusion-test-structure
+// Original Design : Cnc Kitchen
+//                   https://www.printables.com/fr/model/342075-extrusion-test-structure
 // Freely adapted by 5@xes  2023
 //---------------------------
-// Nozzle 0.4
+//     MaxFlow Script
 //---------------------------
-// MaxFlow Script
-//---------------------------
-// Layer = 0.2
-// Start Value          : 100 %
+// Nozzle               : 0.4
+// Layer                : 0.25
+// Start Value          : 50 %
 // Value Increment      : 10 %
-// Change Layer         : 10 
+// Change Layer         : 8 
 // Offset Layer         : 0
 //-------------------------------------------------------------------------------------------
 // Modification : None

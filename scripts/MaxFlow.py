@@ -37,7 +37,7 @@ class MaxFlow(Script):
                     "description": "The percentage start value of the Test.",
                     "type": "int",
                     "unit": "%",
-                    "default_value": 60
+                    "default_value": 50
                 },
                 "valueChange":
                 {
