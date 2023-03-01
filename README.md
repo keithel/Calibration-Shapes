@@ -161,7 +161,7 @@ Description:  postprocessing-script to easily create a FlowTower
 Description:  postprocessing-script to easily create a test for the Maximum speed of the Printer.
 
  The default values are for this FlowTower model : [MaxFlow Test](./models/MaxFlow.stl)
-- FlowTower from 60% to 150% 
+- FlowTower from 50% to 150% 
     - Using Speed Varation   :  [Speed Variation](https://marlinfw.org/docs/gcode/M220.html) (M220 S) 
 
 ![MaxFlow.py](./images/maxflowscript.jpg)
