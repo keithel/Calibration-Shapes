@@ -7,9 +7,11 @@ inputs:
     default: 'i18n'
   translation_name: # name of the translation template and locale files (will be used to include translation)
     description: 'translation template and locale files name'
+    value: 'calibration.pot'
     required: true
   plugin_name: # will be dispayed in the translation files header
-    description: 'Calibration Shape'
+    description: 'plugin name'
+    value: 'Calibration Shape'
     required: true
 outputs:
   template_updated:
