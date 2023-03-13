@@ -61,6 +61,7 @@
 # V2.2.0   : French Translation
 # V2.2.1   : German Translation thanks x40-Community (https://github.com/x40-Community)
 # V2.2.2   : Add Max Flow Test
+# V2.2.3   : Change location resources / i18n
 #-------------------------------------------------------------------------------------------
 
 VERSION_QT5 = False
@@ -117,7 +118,7 @@ i18n_extrud_catalog = i18nCatalog("fdmextruder.def.json")
 # https://github.com/5axes/Calibration-Shapes/issues/1
 # Cura are able to find the scripts from inside the plugin folder if the scripts are into a folder named resources
 Resources.addSearchPath(
-    os.path.join(os.path.abspath(os.path.dirname(__file__)))
+    os.path.join(os.path.abspath(os.path.dirname(__file__)),'resources')
 )  # Plugin translation file import
 
 catalog = i18nCatalog("calibration")
@@ -171,7 +172,7 @@ class CalibrationShapes(QObject, Extension):
         else:
             self._qml_folder = "qml_qt6" 
 
-        self._qml_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), self._qml_folder, "CalibrationShapes.qml")
+        self._qml_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'qml', self._qml_folder, "CalibrationShapes.qml")
         
         self._controller = CuraApplication.getInstance().getController()
         self._message = None
