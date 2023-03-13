@@ -73,11 +73,11 @@ This plugin is using the [Trimesh](https://github.com/mikedh/trimesh) library to
 
 Several postprocessing Scripts are included into the plugin to help the user to generate automaticaly the differents Towers.
 
-- [RetractTower.py](./scripts/RetractTower.py)
-- [SpeedTower.py](./scripts/SpeedTower.py)
-- [TempFanTower.py](./scripts/TempFanTower.py)
-- [FlowTower.py](./scripts/FlowTower.py)
-- [MaxFlow.py](./scripts/MaxFlow.py)
+- [RetractTower.py](./resources/scripts/RetractTower.py)
+- [SpeedTower.py](./resources/scripts/SpeedTower.py)
+- [TempFanTower.py](./resources/scripts/TempFanTower.py)
+- [FlowTower.py](./resources/scripts/FlowTower.py)
+- [MaxFlow.py](./resources/scripts/MaxFlow.py)
 
 ### Copy Scripts
 
@@ -94,7 +94,7 @@ The scripts provided with this plugin must be visible in the Postprocessing scri
 ![Adding script](./images/plugins.jpg)
 
 
-#### [SpeedTower.py](scripts/SpeedTower.py)
+#### [SpeedTower.py](resources/scripts/SpeedTower.py)
 
 
 Description :  postprocessing-script to easily define a Speed Tower.
@@ -114,7 +114,7 @@ Five options :
 ![SpeedTower.py](./images/speedtower.jpg)
 
 
-#### [TempFanTower.py](scripts/TempFanTower.py)
+#### [TempFanTower.py](resources/scripts/TempFanTower.py)
 
 
 Description:  postprocessing-script to easily create a temptower and not use 10 changeAtZ-scripts
@@ -126,7 +126,7 @@ Description:  postprocessing-script to easily create a temptower and not use 10 
 ![TempFanTower.py](./images/tempfan.jpg)
 
 
-#### [RetractTower.py](scripts/RetractTower.py)
+#### [RetractTower.py](resources/scripts/RetractTower.py)
 
 
 
@@ -143,7 +143,7 @@ Two options :
 ![RetractTower.py](./images/retract-tower.jpg)
 
 
-#### [FlowTower.py](scripts/FlowTower.py)
+#### [FlowTower.py](resources/scripts/FlowTower.py)
 
 
 Description:  postprocessing-script to easily create a FlowTower
@@ -155,7 +155,7 @@ Description:  postprocessing-script to easily create a FlowTower
 ![FlowTower.py](./images/flowtower.jpg)
 
 
-#### [MaxFlow.py](scripts/MaxFlow.py)
+#### [MaxFlow.py](resources/scripts/MaxFlow.py)
 
 
 Description:  postprocessing-script to easily create a test for the Maximum speed of the Printer.
