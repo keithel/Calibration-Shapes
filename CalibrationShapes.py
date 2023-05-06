@@ -1,9 +1,9 @@
-#-----------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------
 # Part of the initial source code for primitive Shape (c) 2018 fieldOfView
 #
 # The CalibrationShapes plugin is released under the terms of the AGPLv3 or higher.
 # Modifications 5@xes 2020-2022
-#-----------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------
 # V1.04    : https://github.com/5axes/Calibration-Shapes/issues/4
 #          : https://github.com/5axes/Calibration-Shapes/issues/3
 # V1.0.8   : Add the Help function 2 test part (MultiCube and PETG Tower) 
@@ -62,7 +62,8 @@
 # V2.2.1   : German Translation thanks x40-Community (https://github.com/x40-Community)
 # V2.2.2   : Add Max Flow Test
 # V2.2.3   : Change location resources / i18n
-#-------------------------------------------------------------------------------------------
+# V2.2.4   : Add Simplified Chinese language file thanks ningjiazun (https://github.com/ningjiazun)
+#-----------------------------------------------------------------------------------------------------
 
 VERSION_QT5 = False
 try:
