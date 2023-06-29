@@ -64,6 +64,7 @@
 # V2.2.3   : Change location resources / i18n
 # V2.2.4   : Add Simplified Chinese language file thanks ningjiazun (https://github.com/ningjiazun)
 # V2.2.5   : Add LAyer Adhesion Test Part
+# V2.2.6   : Introduce Backlash test part : https://www.thingiverse.com/thing:4594731 from https://www.thingiverse.com/quas7/designs (Tillmann Krauss)
 #-----------------------------------------------------------------------------------------------------
 
 VERSION_QT5 = False
@@ -211,6 +212,7 @@ class CalibrationShapes(QObject, Extension):
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Flow Test"), self.addFlowTest)
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Max Flow Test"), self.addMaxFlowTest)
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Multi-Flow Test"), self.addMultiFlowTest)
+        self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Backlash Test"), self.addBacklashTest)
         
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Support Test"), self.addSupportTest)
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Lithophane Test"), self.addLithophaneTest)
@@ -515,7 +517,10 @@ class CalibrationShapes(QObject, Extension):
  
     def addThinWall2(self) -> None:
         self._registerShapeStl("ThinWallRought")
-        
+
+    def addThinWall2(self) -> None:
+        self._registerShapeStl("Backlash")  
+  
     def addOverhangTest(self) -> None:
         self._registerShapeStl("OverhangTest", "Overhang.stl")
  
