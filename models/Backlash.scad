@@ -14,10 +14,10 @@ Rows = 10; //[1:1:20]
 Backlashstartvalue = 0.00; // [0.0:0.1:1.9]
 /* [Print thickness and height] */
 //Suggestion: Wallheight = Nozzle diameter.
-wallheight = 0.35; //[0.2:0.05:0.8]
+wallheight = 0.4; //[0.2:0.05:0.8]
 
 //Suggestion: Wallthickness = 2 or 2.5 times the Wallheight. Those are values that work for me. Your mileage may vary a lot. Your slicer of course needs to be set acordingly so the print is made in a single layer. Fatter lines stick better to the plate but thinner lines are easier to interpret.
-wallthickness = 0.85; //[0.2:0.05:1.6]
+wallthickness = 0.8; //[0.2:0.05:1.6]
 
 rowspacing = 1;
 
@@ -106,6 +106,7 @@ color("black")
 
 
 //draw y strips right handed --> how to invert??
+translate([-48, -49, 0]) {
 for (soffsy=[0:20:(Rows*20-10)])
 {
     //draw 10 samples
@@ -119,6 +120,7 @@ for (soffsy=[0:20:(Rows*20-10)])
       unit_r(soffsy/2, soffsx, sbl  );    
     }
 }
+
 
 //draw y strips left handed
 for (soffsy=[0:20:(Rows*20-10)])
@@ -138,6 +140,6 @@ for (soffsy=[0:20:(Rows*20-10)])
 
 // The blob that marks zero
 //color("black")
-    translate([(1.6), (3), 0])
+    translate([1.6, 3, 0])
         cube([(3*wallthickness), (3*wallthickness), wallheight], center=false);
-
+}
