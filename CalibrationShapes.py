@@ -63,6 +63,7 @@
 # V2.2.2   : Add Max Flow Test
 # V2.2.3   : Change location resources / i18n
 # V2.2.4   : Add Simplified Chinese language file thanks ningjiazun (https://github.com/ningjiazun)
+# V2.2.5   : Add LAyer Adhesion Test Part
 #-----------------------------------------------------------------------------------------------------
 
 VERSION_QT5 = False
@@ -194,6 +195,7 @@ class CalibrationShapes(QObject, Extension):
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Retract Tower"), self.addRetractTower)
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add an Acceleration Tower"), self.addAccelerationTower)
         
+        self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Layer Adhesion Test"), self.addLayerAdhesion)
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Retract Test"), self.addRetractTest)
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a XY Calibration Test"), self.addXYCalibration)
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Dimensional Accuracy Test"), self.addDimensionalTest)
@@ -499,6 +501,9 @@ class CalibrationShapes(QObject, Extension):
         
     def addRetractTest(self) -> None:
         self._registerShapeStl("RetractTest")
+
+    def addLayerAdhesion(self) -> None:
+        self._registerShapeStl("LayerAdhesion")    
     
     def addXYCalibration(self) -> None:
         self._registerShapeStl("xy_calibration")
