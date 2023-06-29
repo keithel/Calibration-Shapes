@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Calibration Shape\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-06 12:16+0000\n"
+"POT-Creation-Date: 2023-06-29 09:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,8 +225,8 @@ msgctxt "@info"
 msgid "Every script are up to date in :\n"
 msgstr ""
 
-#: CalibrationShapes.py:360 qml/qml_qt6/CalibrationShapes.qml:20
-#: qml/qml_qt5/CalibrationShapes.qml:20
+#: CalibrationShapes.py:360 qml/qml_qt5/CalibrationShapes.qml:20
+#: qml/qml_qt6/CalibrationShapes.qml:20
 msgctxt "@title"
 msgid "Calibration Shapes"
 msgstr ""
@@ -298,7 +298,7 @@ msgctxt "@info:title"
 msgid "Post Processing"
 msgstr ""
 
-#: qml/qml_qt6/CalibrationShapes.qml:113 qml/qml_qt5/CalibrationShapes.qml:90
+#: qml/qml_qt5/CalibrationShapes.qml:90 qml/qml_qt6/CalibrationShapes.qml:113
 msgctxt "@label"
 msgid "Size:"
 msgstr ""
