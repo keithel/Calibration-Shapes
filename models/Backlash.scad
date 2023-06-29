@@ -1,3 +1,6 @@
+// Backlash Quick calibration test 
+// https://www.thingiverse.com/thing:4594731
+// Author : https://www.thingiverse.com/quas7/designs (Tillmann Krauss)
 // Calibrate X axis
 // Set backlash compensation to 0 in your software while sampling an axis.
 // Each step up increases backlash offset with 0.01
