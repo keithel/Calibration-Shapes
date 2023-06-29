@@ -21,6 +21,7 @@ You can also load standard test  / calibration  part :
 | [PC   TempTower 290 - 250°C](https://github.com/5axes/Calibration-Shapes/wiki/PC-TempTower-290---250°C)         | [PC   TempTower 290 - 250°C](./models/TempTowerPC.stl)        |
 | [Retract Tower](https://github.com/5axes/Calibration-Shapes/wiki/Retract-Tower)                                 | [Retract Tower](./models/RetractTower.stl)                      |
 | [Acceleration Tower](https://github.com/5axes/Calibration-Shapes/wiki/Acceleration-&-Ringing-Tower)             | [Acceleration Tower](./models/AccelerationTower.stl)            |
+| [Layer Adhesion Test part](https://github.com/5axes/Calibration-Shapes/wiki/Layer-Adhesion)                         | [Layer Adhesion Test](./models/LayerAdhesion.stl)                   |
 | [Retract Test part](https://github.com/5axes/Calibration-Shapes/wiki/Retract-Test-part)                         | [Retract Test part](./models/RetractTest.stl)                   |
 | [XY Calibration Test part](https://github.com/5axes/Calibration-Shapes/wiki/XY-Calibration-Test-part)           | [XY Calibration Test part](./models/xy_calibration.stl)         |
 | [Bridge Spiral test](https://github.com/5axes/Calibration-Shapes/wiki/Bridge-Spiral-test)                       | [Bridge Spiral test](./models/BridgeTest.stl)                   |
