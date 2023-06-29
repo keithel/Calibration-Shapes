@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Calibration Shape\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-29 09:44+0000\n"
+"POT-Creation-Date: 2023-06-29 09:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,72 +152,72 @@ msgctxt "@item:inmenu"
 msgid "Add a Multi-Flow Test"
 msgstr ""
 
-#: CalibrationShapes.py:216
+#: CalibrationShapes.py:215
 msgctxt "@item:inmenu"
 msgid "Add a Support Test"
 msgstr ""
 
-#: CalibrationShapes.py:217
+#: CalibrationShapes.py:216
 msgctxt "@item:inmenu"
 msgid "Add a Lithophane Test"
 msgstr ""
 
-#: CalibrationShapes.py:220
+#: CalibrationShapes.py:219
 msgctxt "@item:inmenu"
 msgid "Add a Bed Level Calibration"
 msgstr ""
 
-#: CalibrationShapes.py:221
+#: CalibrationShapes.py:220
 msgctxt "@item:inmenu"
 msgid "Add a Linear/Pressure Adv Tower"
 msgstr ""
 
-#: CalibrationShapes.py:223
+#: CalibrationShapes.py:222
 msgctxt "@item:inmenu"
 msgid "Add a Cube bi-color"
 msgstr ""
 
-#: CalibrationShapes.py:224
+#: CalibrationShapes.py:223
 msgctxt "@item:inmenu"
 msgid "Add a Bi-Color Calibration Cube"
 msgstr ""
 
-#: CalibrationShapes.py:225
+#: CalibrationShapes.py:224
 msgctxt "@item:inmenu"
 msgid "Add an Extruder Offset Calibration Part"
 msgstr ""
 
-#: CalibrationShapes.py:228
+#: CalibrationShapes.py:227
 msgctxt "@item:inmenu"
 msgid "Copy Scripts"
 msgstr ""
 
-#: CalibrationShapes.py:229
+#: CalibrationShapes.py:228
 msgctxt "@item:inmenu"
 msgid "Define default size"
 msgstr ""
 
-#: CalibrationShapes.py:231
+#: CalibrationShapes.py:230
 msgctxt "@item:inmenu"
 msgid "Help"
 msgstr ""
 
-#: CalibrationShapes.py:286
+#: CalibrationShapes.py:285
 msgctxt "@info:error"
 msgid "Entered size invalid: "
 msgstr ""
 
-#: CalibrationShapes.py:292
+#: CalibrationShapes.py:291
 msgctxt "@info:error"
 msgid "Size value must be positive !"
 msgstr ""
 
-#: CalibrationShapes.py:355
+#: CalibrationShapes.py:354
 msgctxt "@info:message"
 msgid " script(s) copied in :\n"
 msgstr ""
 
-#: CalibrationShapes.py:357
+#: CalibrationShapes.py:356
 msgctxt "@info:message"
 msgid ""
 "\n"
@@ -225,54 +225,54 @@ msgid ""
 "list"
 msgstr ""
 
-#: CalibrationShapes.py:359
+#: CalibrationShapes.py:358
 msgctxt "@info"
 msgid "Every script are up to date in :\n"
 msgstr ""
 
-#: CalibrationShapes.py:362 qml/qml_qt5/CalibrationShapes.qml:20
+#: CalibrationShapes.py:361 qml/qml_qt5/CalibrationShapes.qml:20
 #: qml/qml_qt6/CalibrationShapes.qml:20
 msgctxt "@title"
 msgid "Calibration Shapes"
 msgstr ""
 
-#: CalibrationShapes.py:441
+#: CalibrationShapes.py:440
 msgctxt "@info:status"
 msgid "Please select one or more models first"
 msgstr ""
 
-#: CalibrationShapes.py:637 CalibrationShapes.py:639 CalibrationShapes.py:654
-#: CalibrationShapes.py:656 CalibrationShapes.py:678 CalibrationShapes.py:680
-#: CalibrationShapes.py:754 CalibrationShapes.py:756
+#: CalibrationShapes.py:636 CalibrationShapes.py:638 CalibrationShapes.py:653
+#: CalibrationShapes.py:655 CalibrationShapes.py:677 CalibrationShapes.py:679
+#: CalibrationShapes.py:753 CalibrationShapes.py:755
 msgctxt "@info:label"
 msgid "! Modification ! in the current profile of : "
 msgstr ""
 
-#: CalibrationShapes.py:637 CalibrationShapes.py:639 CalibrationShapes.py:654
-#: CalibrationShapes.py:656 CalibrationShapes.py:678 CalibrationShapes.py:680
-#: CalibrationShapes.py:754 CalibrationShapes.py:756 CalibrationShapes.py:765
-#: CalibrationShapes.py:767
+#: CalibrationShapes.py:636 CalibrationShapes.py:638 CalibrationShapes.py:653
+#: CalibrationShapes.py:655 CalibrationShapes.py:677 CalibrationShapes.py:679
+#: CalibrationShapes.py:753 CalibrationShapes.py:755 CalibrationShapes.py:764
+#: CalibrationShapes.py:766
 msgctxt "@info:label"
 msgid ""
 "\n"
 "New value :"
 msgstr ""
 
-#: CalibrationShapes.py:637 CalibrationShapes.py:639 CalibrationShapes.py:654
-#: CalibrationShapes.py:656 CalibrationShapes.py:678 CalibrationShapes.py:680
-#: CalibrationShapes.py:754 CalibrationShapes.py:756 CalibrationShapes.py:765
-#: CalibrationShapes.py:767
+#: CalibrationShapes.py:636 CalibrationShapes.py:638 CalibrationShapes.py:653
+#: CalibrationShapes.py:655 CalibrationShapes.py:677 CalibrationShapes.py:679
+#: CalibrationShapes.py:753 CalibrationShapes.py:755 CalibrationShapes.py:764
+#: CalibrationShapes.py:766
 msgctxt "@info:title"
 msgid "Warning ! Calibration Shapes"
 msgstr ""
 
-#: CalibrationShapes.py:705 CalibrationShapes.py:707 CalibrationShapes.py:729
-#: CalibrationShapes.py:731
+#: CalibrationShapes.py:704 CalibrationShapes.py:706 CalibrationShapes.py:728
+#: CalibrationShapes.py:730
 msgctxt "@info:label"
 msgid "Individual definition for the calibration part of : "
 msgstr ""
 
-#: CalibrationShapes.py:705 CalibrationShapes.py:707
+#: CalibrationShapes.py:704 CalibrationShapes.py:706
 msgctxt "@info:label"
 msgid ""
 "\n"
@@ -280,20 +280,20 @@ msgid ""
 "Set value :"
 msgstr ""
 
-#: CalibrationShapes.py:705 CalibrationShapes.py:707 CalibrationShapes.py:729
-#: CalibrationShapes.py:731
+#: CalibrationShapes.py:704 CalibrationShapes.py:706 CalibrationShapes.py:728
+#: CalibrationShapes.py:730
 msgctxt "@info:title"
 msgid "Information ! Calibration Shapes"
 msgstr ""
 
-#: CalibrationShapes.py:729 CalibrationShapes.py:731
+#: CalibrationShapes.py:728 CalibrationShapes.py:730
 msgctxt "@info:label"
 msgid ""
 "\n"
 "Set value :"
 msgstr ""
 
-#: CalibrationShapes.py:765 CalibrationShapes.py:767
+#: CalibrationShapes.py:764 CalibrationShapes.py:766
 msgctxt "@info:label"
 msgid "! Modification ! for the extruder definition of : "
 msgstr ""
