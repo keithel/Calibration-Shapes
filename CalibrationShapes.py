@@ -212,7 +212,6 @@ class CalibrationShapes(QObject, Extension):
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Max Flow Test"), self.addMaxFlowTest)
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Multi-Flow Test"), self.addMultiFlowTest)
         
-        
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Support Test"), self.addSupportTest)
         self.addMenuItem(catalog.i18nc("@item:inmenu", "Add a Lithophane Test"), self.addLithophaneTest)
         

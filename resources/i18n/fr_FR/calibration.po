@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Name It\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-29 09:33+0000\n"
-"PO-Revision-Date: 2023-06-29 11:45+0200\n"
+"PO-Revision-Date: 2023-06-29 11:47+0200\n"
 "Last-Translator: 5axes <5axes@free.fr>\n"
 "Language-Team: 5axes\n"
 "Language: fr\n"
@@ -90,7 +90,7 @@ msgstr "Tour d'Accélération"
 #: CalibrationShapes.py:198
 msgctxt "@item:inmenu"
 msgid "Add a Layer Adhesion Test"
-msgstr "Ajouter un Test d'adhérence des couches"
+msgstr "Test d'adhérence des couches"
 
 #: CalibrationShapes.py:199
 msgctxt "@item:inmenu"
