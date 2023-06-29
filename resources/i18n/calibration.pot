@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Calibration Shape\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-29 10:17+0000\n"
+"POT-Creation-Date: 2023-06-29 11:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,24 +152,24 @@ msgctxt "@item:inmenu"
 msgid "Add a Multi-Flow Test"
 msgstr ""
 
-#: CalibrationShapes.py:215
-msgctxt "@item:inmenu"
-msgid "Add a Backlash Test"
-msgstr ""
-
-#: CalibrationShapes.py:217
+#: CalibrationShapes.py:216
 msgctxt "@item:inmenu"
 msgid "Add a Support Test"
 msgstr ""
 
-#: CalibrationShapes.py:218
+#: CalibrationShapes.py:217
 msgctxt "@item:inmenu"
 msgid "Add a Lithophane Test"
 msgstr ""
 
-#: CalibrationShapes.py:221
+#: CalibrationShapes.py:220
 msgctxt "@item:inmenu"
 msgid "Add a Bed Level Calibration"
+msgstr ""
+
+#: CalibrationShapes.py:221
+msgctxt "@item:inmenu"
+msgid "Add a Backlash Test"
 msgstr ""
 
 #: CalibrationShapes.py:222
