@@ -29,6 +29,7 @@
 # Version 5.2.0 of 13/02/2022 Who : 5axes What : New Settings
 # Version 6.0.0 of 01/05/2022 Who : 5axes What : Update for Cura 5.0
 # Version 6.0.1 of 18/05/2022 Who : 5axes What : Change Test for CuraVersion
+# Version 6.1.0 of 13/07/2023 Who : 5axes What : Update for 5.4
 #
 #
 import string
@@ -42,7 +43,7 @@ catalog = i18nCatalog("cura")
         
 ## 
 class GCodeDocumentation(Script):
-    version = "6.0.0"
+    version = "6.1.0"
     
     def getSettingDataString(self):
         return """{
@@ -449,20 +450,44 @@ class GCodeDocumentation(Script):
         #   support_tree_enable 
         if Major < 4 or ( Major == 4 and Minor <= 9 ) : 
             replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_enable")
+
+        #   support_angle
+        replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_angle")
+        #   support_type
+        replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_type") 
         
-        if support_structure == "tree" :       
-            #   support_tree_angle
+        if support_structure == "tree" :
             if adv_desc :
+                #   support_tree_angle
                 replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_angle",5)
-            #   support_tree_branch_distance
-            if adv_desc :
-                replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_branch_distance",5)
-            #   support_tree_branch_diameter
-            if adv_desc :
+                #   support_tree_branch_diameter
                 replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_branch_diameter",5)
-            #   support_tree_branch_diameter_angle
-            if adv_desc :
-                replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_branch_diameter_angle",5) 
+                #   support_tree_branch_diameter_angle
+                replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_branch_diameter_angle",5)
+                if ( Major >= 5 and Minor >= 4 ) :
+                    #   support_tree_max_diameter
+                    replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_max_diameter",5)
+                    #   support_tree_angle_slow
+                    replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_angle_slow",5) 
+                    #   support_tree_max_diameter_increase_by_merges_when_support_to_model
+                    replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_max_diameter_increase_by_merges_when_support_to_model",5) 
+                    #   support_tree_min_height_to_model
+                    replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_min_height_to_model",5)  
+                    #   support_tree_bp_diameter
+                    replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_bp_diameter",5)  
+                    #   support_tree_top_rate
+                    replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_top_rate",5)  
+                    #   support_tree_tip_diameter
+                    replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_tip_diameter",5)  
+                    #   support_tree_limit_branch_reach
+                    replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_limit_branch_reach",5) 
+                    #   support_tree_rest_preference
+                    replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_rest_preference",5)                 
+                else:              
+                    #   support_tree_branch_distance
+                    replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_branch_distance",5)
+                    #   support_tree_branch_diameter
+                    replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_tree_branch_diameter",5) 
             
         #   support_type
         replace_string = replace_string + self.GetDataExtruder(extruder_id,"support_type")
@@ -528,6 +553,9 @@ class GCodeDocumentation(Script):
         if adv_desc :
             if adhesion_type == "brim" :
                 replace_string = replace_string + self.GetDataExtruder(extruder_id,"brim_width")
+                if ( Major >= 5 and Minor >= 4 ) :
+                    replace_string = replace_string + self.GetDataExtruder(extruder_id,"brim_smart_ordering")
+                    
         if adv_desc :
             if adhesion_type == "raft" :
                 replace_string = replace_string + self.GetDataExtruder(extruder_id,"raft_surface_layers")
