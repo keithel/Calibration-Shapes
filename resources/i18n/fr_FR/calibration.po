@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Name It\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-29 10:17+0000\n"
-"PO-Revision-Date: 2023-06-29 13:12+0200\n"
+"PO-Revision-Date: 2023-07-24 12:12+0200\n"
 "Last-Translator: 5axes <5axes@free.fr>\n"
 "Language-Team: 5axes\n"
 "Language: fr\n"
@@ -90,7 +90,7 @@ msgstr "Tour d'Accélération"
 #: CalibrationShapes.py:199
 msgctxt "@item:inmenu"
 msgid "Add a Layer Adhesion Test"
-msgstr "Test d'adhérence des couches"
+msgstr "Test d'Adhérence des couches"
 
 #: CalibrationShapes.py:200
 msgctxt "@item:inmenu"
@@ -120,7 +120,7 @@ msgstr "Test Tailles des Trous"
 #: CalibrationShapes.py:207
 msgctxt "@item:inmenu"
 msgid "Add a Bridge Test"
-msgstr "Test pour les Ponts"
+msgstr "Test des Ponts"
 
 #: CalibrationShapes.py:208
 msgctxt "@item:inmenu"
